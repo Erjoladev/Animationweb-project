@@ -1,0 +1,102 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#splashScreen {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.fullscreen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../images/splashscreen_1100_720.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    background: url('../images/bg_niveau1.png') no-repeat center center;
+    background-size: cover;
+}
+
+#loadingScreen {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background: url('../images/loading.gif') no-repeat center;
+    /* background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.game-logo {
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #fff;
+}
+
+#startGame {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+button#startGame {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#gameInfo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#score,
+#lives {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+#lives {
+    width: 150px;
+    height: 50px;
+}
